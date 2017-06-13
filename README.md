@@ -1,4 +1,4 @@
-# walletdecryptor
+# relativelysecurewallet
 
 #### TL;DR
 
