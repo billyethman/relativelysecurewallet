@@ -9,7 +9,7 @@ Tested on mac, with openssl installed (i think its default anyway.)
 ```openssl des -in insurewallet.json -out mysecurewallet.json.enc```
 
 2. Change lines 2-6 to your liking (only change line 6 if you know what you're doing)
-3. Run the script with the files in the right places.
+3. chmod +x and run the script with the files in the right places.
 4. ???
 5. Profit
 
@@ -35,6 +35,7 @@ Anyway, after that, open up the `getwallet.sh` from this repo and change lines 2
 
 Line 2 should be where your encrypted wallet will live (e.g ~/Dropbox/mywallet.json.enc) and line 3 to where you want to decrypt you wallet to (e.g ~/Desktop/wallet.dec). A good idea would be to make this somewhere easily accessible so you can load MEW and throw the json at it.
 
+Ok, we're nearly there. From here you can `chmod +x getwallet.sh` and then run `./getwallet.sh` at your whim. For extra points, stick the script somewhere and set up an alias to use it.
 
 #### Hey, sounds simple enough..
 
