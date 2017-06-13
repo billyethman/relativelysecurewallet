@@ -6,7 +6,7 @@ Tested on mac, with openssl installed (i think its default anyway.)
 
 1. Encrypt your wallet using something along these lines
 
-```openssl des -in insurewallet.json -out mysecurewallet.json.enc```
+`openssl des -in insurewallet.json -out mysecurewallet.json.enc`
 
 2. Change lines 2-6 to your liking (only change line 6 if you know what you're doing)
 3. chmod +x and run the script with the files in the right places.
@@ -25,7 +25,7 @@ This simple script will help with this.
 
 First, encrypt your wallet using openssl, with a command line _something_ like this
 
-```openssl des -in insurewallet.json -out mysecurewallet.json.enc```
+`openssl des -in insecurewallet.json -out securewallet.json.enc`
 
 The 'in' file needs to be your unencrypted wallet. The "out" can be whatever you like, but this is where your encrypted wallet will end up.
 
@@ -39,7 +39,7 @@ Ok, we're nearly there. From here you can `chmod +x getwallet.sh` and then run `
 
 #### Hey, sounds simple enough..
 
-Well, thats the idea... As an ADDED BONUS, you can pick from 2 modes by changing line 4 (and possibly 5 depending on which mode you want) to either "TIMED" or "WAIT"
+Well, thats the idea... As an ADDED BONUS, you can pick from 2 modes by changing line 4 (and possibly 5 depending on which mode you want) to either `TIMED` or `WAIT`
 
 ##### TIMED
 
